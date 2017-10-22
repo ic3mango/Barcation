@@ -56,13 +56,12 @@ class BarListItem extends Component {
           <div className="card-action">
             <a className="left waves-effect waves-yellow btn-flat" href={bar.url}>Yelp Site</a>
             { user ?
-            <a
-              href="#"
+            <button
               onClick={() => this.handleAddToGoing(bar.id)}
               disabled={this.state.userGoing}
               className="right waves-effect waves-light btn-flat white-text activator">
               Add to Going
-            </a> :
+            </button> :
             <a className="right" href="/auth/twitter">
               Login
             </a>
