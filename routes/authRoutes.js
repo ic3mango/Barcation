@@ -10,8 +10,8 @@ module.exports = (app) => {
   app.get(
     '/auth/twitter/callback',
     passport.authenticate('twitter', {
-      successRedirect: process.env.CLIENT_URL,
-      failureRedirect: process.env.CLIENT_URL
+      successRedirect: "/",
+      failureRedirect: "/"
     })
   );
 
