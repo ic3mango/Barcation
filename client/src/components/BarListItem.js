@@ -29,7 +29,7 @@ class BarListItem extends Component {
   render() {
     const { bar, user, index } = this.props;
     return (
-      <div className="col l6 m12">
+      <div className="col l6 m12 s12">
         <div className="card small grey darken-4 white-text">
           <div className="card-content">
             <span className={`card-title activator ${this.state.userGoing && "yellow-text"}`}>
